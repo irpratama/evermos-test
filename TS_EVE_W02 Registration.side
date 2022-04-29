@@ -1,0 +1,172 @@
+{
+  "id": "802035d5-47f4-41e8-ae79-c39a6261298e",
+  "version": "2.0",
+  "name": "TS_EVE_W02 Registration",
+  "url": "https://evermos.com",
+  "tests": [{
+    "id": "bc4cf8a9-b57b-4646-88c2-a9f8e72afbd9",
+    "name": "TC_EVE_Reg_W01",
+    "commands": [{
+      "id": "87206583-2aa3-4cd5-8160-a86133f71ca9",
+      "comment": "",
+      "command": "open",
+      "target": "/home/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2609a4ed-7892-4bde-9f21-71ea63a6cdd7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "994x1050",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9aa30c2e-d2ba-43ac-aa22-9b07a8cb6030",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Daftar",
+      "targets": [
+        ["linkText=Daftar", "linkText"],
+        ["css=.elementor-container:nth-child(2) #menu-1-b1a0ff7 > .menu-item:nth-child(2) > .elementor-item:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Daftar')]", "xpath:link"],
+        ["xpath=//ul[@id='menu-1-b1a0ff7']/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://evermos.com/registration?source_link=versionb.ea7')]", "xpath:href"],
+        ["xpath=//div[3]/div/div/div/div/nav/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Daftar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac171d66-f269-4b51-8874-99c975c46fcb",
+      "comment": "",
+      "command": "type",
+      "target": "name=telephone",
+      "targets": [
+        ["name=telephone", "name"],
+        ["css=.vti__input", "css:finder"],
+        ["xpath=//input[@id='']", "xpath:attributes"],
+        ["xpath=//div[@id='__layout']/div/div/div/form/div/div[2]/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "82144087190"
+    }, {
+      "id": "eed9b004-bb49-4dd8-ba16-dad355b58544",
+      "comment": "",
+      "command": "type",
+      "target": "css=.registration:nth-child(2) input",
+      "targets": [
+        ["css=.registration:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='__layout']/div/div/div/form/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "Handi"
+    }, {
+      "id": "a55b48da-8a67-49ea-aed9-fc82ff9b96a6",
+      "comment": "",
+      "command": "type",
+      "target": "css=.registration:nth-child(3) input",
+      "targets": [
+        ["css=.registration:nth-child(3) input", "css:finder"],
+        ["xpath=(//input[@value=''])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='__layout']/div/div/div/form/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": "passwidi"
+    }, {
+      "id": "18fbaf3e-8da3-4ec0-9b26-d803d0270145",
+      "comment": "",
+      "command": "click",
+      "target": "css=.registration__block",
+      "targets": [
+        ["css=.registration__block", "css:finder"],
+        ["xpath=//div[@id='__layout']/div/div/div/form/div[4]/div[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[3]", "xpath:href"],
+        ["xpath=//div[4]/div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8c8ec39b-038b-4596-a081-1e76cfb1a278",
+      "comment": "",
+      "command": "type",
+      "target": "css=.searchBox__input",
+      "targets": [
+        ["css=.searchBox__input", "css:finder"],
+        ["xpath=//input[@type='search']", "xpath:attributes"],
+        ["xpath=//div[@id='__layout']/div/div[2]/div/div[3]/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": "bandung"
+    }, {
+      "id": "a4df7290-40a4-468a-a55c-d2a33f09093b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.list:nth-child(1) > .list__label",
+      "targets": [
+        ["css=.list:nth-child(1) > .list__label", "css:finder"],
+        ["xpath=//div[@id='__layout']/div/div[2]/div/div[3]/div/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Banten, Serang, Kec.Bandung')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "79406c6a-4b3a-4f04-8265-bb2593d47b74",
+      "comment": "",
+      "command": "click",
+      "target": "css=.tnc__checkbox input",
+      "targets": [
+        ["css=.tnc__checkbox input", "css:finder"],
+        ["xpath=(//input[@type='checkbox'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='__layout']/div/div/div/form/div[6]/div/label/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "46173d66-ed3d-4342-8a93-6363ee70d03c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='__layout']/div/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Lanjutkan Pendaftaran')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1e0c95c7-253a-4d53-95d1-7a9ce6d108b9",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//h1[contains(.,'Verifikasi Melalui WhatsApp')]",
+      "targets": [
+        ["css=.pageVerify__title", "css:finder"],
+        ["xpath=//div[@id='__layout']/div/div/div/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Verifikasi Melalui WhatsApp')]", "xpath:innerText"]
+      ],
+      "value": "Verifikasi Melalui WhatsApp"
+    }, {
+      "id": "d72748e1-94a4-4130-bc3e-43ec9a057599",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//p[contains(.,'+6282144087190')]",
+      "targets": [
+        ["css=.pageVerify__telephone", "css:finder"],
+        ["xpath=//div[@id='__layout']/div/div/div/div/p[2]", "xpath:idRelative"],
+        ["xpath=//p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,'+6282144087190')]", "xpath:innerText"]
+      ],
+      "value": "+6282144087190"
+    }]
+  }],
+  "suites": [{
+    "id": "118537e1-0c7c-4b08-8cab-3e7e7fb397ba",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["bc4cf8a9-b57b-4646-88c2-a9f8e72afbd9"]
+  }],
+  "urls": ["https://evermos.com/"],
+  "plugins": []
+}
