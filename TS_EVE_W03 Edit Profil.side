@@ -1,0 +1,21 @@
+{
+  "id": "e1174a10-bd63-414a-8361-c5861c34ed04",
+  "version": "2.0",
+  "name": "TS_EVE_W03 Edit Profil",
+  "url": "",
+  "tests": [{
+    "id": "7d3446e8-444d-49db-921f-2f1ecdb72591",
+    "name": "Untitled",
+    "commands": []
+  }],
+  "suites": [{
+    "id": "caa0a82d-e807-441e-a4b8-d0bf2aaa9037",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["7d3446e8-444d-49db-921f-2f1ecdb72591"]
+  }],
+  "urls": [],
+  "plugins": []
+}
