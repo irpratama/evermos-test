@@ -491,6 +491,110 @@
       ],
       "value": ""
     }]
+  }, {
+    "id": "96f5952a-1830-4edb-9929-8280568eb665",
+    "name": "TC_EVE_Login_W06",
+    "commands": [{
+      "id": "1614fd95-4896-411b-afd0-cac47e9b67e4",
+      "comment": "",
+      "command": "open",
+      "target": "/home/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6a1430c7-d9b3-4fea-b048-067f9578eead",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "994x1050",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "47a4e07b-3085-4270-8606-238ce12274fa",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Masuk",
+      "targets": [
+        ["linkText=Masuk", "linkText"],
+        ["css=.elementor-container:nth-child(2) #menu-1-b1a0ff7 > .menu-item:nth-child(1) > .elementor-item:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Masuk')]", "xpath:link"],
+        ["xpath=//ul[@id='menu-1-b1a0ff7']/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://evermos.com/login')]", "xpath:href"],
+        ["xpath=//div[3]/div/div/div/div/nav/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Masuk')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f93e9a7-b145-49ab-9f11-2a7ec3823f3d",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//div[@id='__layout']/div/div/form/label/span[2]/input",
+      "targets": [
+        ["css=.inputText--focus .inputText__input", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='__layout']/div/div/form/label/span[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "9245b5f7-2556-48dd-997f-46fd1efd6446",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//div[@id='__layout']/div/div/form/label[2]/span[2]/input",
+      "targets": [
+        ["css=.inputText--focus .inputText__input", "css:finder"],
+        ["xpath=(//input[@value=''])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='__layout']/div/div/form/label[2]/span[2]/input", "xpath:idRelative"],
+        ["xpath=//label[2]/span[2]/input", "xpath:position"]
+      ],
+      "value": "abcd123"
+    }, {
+      "id": "f33444d1-33a8-4221-8acb-6eec0de93e07",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='__layout']/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Masuk')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2727c2cc-9712-4b17-8848-d8ecf3460f02",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=p:nth-child(1)",
+      "targets": [
+        ["css=p:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='__layout']/div/div/form/p", "xpath:idRelative"],
+        ["xpath=//form/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Nomor ini belum terdaftar sebagai reseller')]", "xpath:innerText"]
+      ],
+      "value": "Nomor ini belum terdaftar sebagai reseller"
+    }, {
+      "id": "b22032a5-6ee9-4d1f-83fb-914b4ebb9bff",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.inputText:nth-child(2) > .inputText__inner span",
+      "targets": [
+        ["css=.inputText:nth-child(2) > .inputText__inner span", "css:finder"],
+        ["xpath=//div[@id='__layout']/div/div/form/label/span[2]/i/span", "xpath:idRelative"],
+        ["xpath=//span[2]/i/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8b61af12-1302-46eb-921d-53412b93412b",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.inputText:nth-child(3) > .inputText__inner span",
+      "targets": [
+        ["css=.inputText:nth-child(3) > .inputText__inner span", "css:finder"],
+        ["xpath=//div[@id='__layout']/div/div/form/label[2]/span[2]/i/span", "xpath:idRelative"],
+        ["xpath=//label[2]/span[2]/i/span", "xpath:position"]
+      ],
+      "value": ""
+    }]
   }],
   "suites": [{
     "id": "ccff4c1f-2ea5-48b5-8c62-26840669c9ef",
