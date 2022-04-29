@@ -288,6 +288,105 @@
       ],
       "value": ""
     }]
+  }, {
+    "id": "c71289d8-e5c6-41fc-9967-adaa37535e53",
+    "name": "TC_EVE_Login_W04",
+    "commands": [{
+      "id": "10fb97ee-bc14-43be-a028-3b8ba3be2eb9",
+      "comment": "",
+      "command": "open",
+      "target": "/home/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "50b0bcfe-dbdd-475c-be49-10e4420510f7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "994x1050",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "57b46b97-f86e-4e42-ad51-561c27e8e7f4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Masuk",
+      "targets": [
+        ["linkText=Masuk", "linkText"],
+        ["css=.elementor-container:nth-child(2) #menu-1-b1a0ff7 > .menu-item:nth-child(1) > .elementor-item:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Masuk')]", "xpath:link"],
+        ["xpath=//ul[@id='menu-1-b1a0ff7']/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://evermos.com/login')]", "xpath:href"],
+        ["xpath=//div[3]/div/div/div/div/nav/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Masuk')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9724df65-32ba-4e26-b43c-db244e0d434e",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//div[@id='__layout']/div/div/form/label/span[2]/input",
+      "targets": [
+        ["css=.inputText--focus .inputText__input", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='__layout']/div/div/form/label/span[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "5d1a8047-0608-4bbe-8cc4-eb0b0cd9a153",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//div[@id='__layout']/div/div/form/label[2]/span[2]/input",
+      "targets": [
+        ["css=.inputText--focus .inputText__input", "css:finder"],
+        ["xpath=(//input[@value=''])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='__layout']/div/div/form/label[2]/span[2]/input", "xpath:idRelative"],
+        ["xpath=//label[2]/span[2]/input", "xpath:position"]
+      ],
+      "value": "password"
+    }, {
+      "id": "98cbf69b-1bd8-49f4-99df-164d7bc62741",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='__layout']/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Masuk')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "39290145-469a-40b1-982f-4935e7ba77e1",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//p[contains(.,'Nomor ini belum terdaftar sebagai reseller')]",
+      "targets": [],
+      "value": "Nomor ini belum terdaftar sebagai reseller"
+    }, {
+      "id": "3747e73e-59e2-4de0-b829-b24da31b54fe",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.inputText:nth-child(2) > .inputText__inner span",
+      "targets": [
+        ["css=.inputText:nth-child(2) > .inputText__inner span", "css:finder"],
+        ["xpath=//div[@id='__layout']/div/div/form/label/span[2]/i/span", "xpath:idRelative"],
+        ["xpath=//span[2]/i/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "788a9248-78f4-4f19-ab6d-e84df4800edc",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.inputText:nth-child(3) > .inputText__inner span",
+      "targets": [
+        ["css=.inputText:nth-child(3) > .inputText__inner span", "css:finder"],
+        ["xpath=//div[@id='__layout']/div/div/form/label[2]/span[2]/i/span", "xpath:idRelative"],
+        ["xpath=//label[2]/span[2]/i/span", "xpath:position"]
+      ],
+      "value": ""
+    }]
   }],
   "suites": [{
     "id": "ccff4c1f-2ea5-48b5-8c62-26840669c9ef",
