@@ -98,6 +98,101 @@
       ],
       "value": ""
     }]
+  }, {
+    "id": "2522dedd-cae1-483a-a64c-f9dc27d8a627",
+    "name": "TC_EVE_Login_W02",
+    "commands": [{
+      "id": "003c6d03-b73c-4ae5-af1d-6da4f32cdc5f",
+      "comment": "",
+      "command": "open",
+      "target": "/home/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cb504656-0c08-4d07-ab44-17f42665b0eb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "994x1050",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "334b6836-4f60-493e-a17b-e4bdb52ff2d4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Masuk",
+      "targets": [
+        ["linkText=Masuk", "linkText"],
+        ["css=.elementor-container:nth-child(2) #menu-1-b1a0ff7 > .menu-item:nth-child(1) > .elementor-item:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Masuk')]", "xpath:link"],
+        ["xpath=//ul[@id='menu-1-b1a0ff7']/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://evermos.com/login')]", "xpath:href"],
+        ["xpath=//div[3]/div/div/div/div/nav/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Masuk')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c90fb4bd-b92a-46e1-981c-24326d4cc8c2",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//div[@id='__layout']/div/div/form/label/span[2]/input",
+      "targets": [
+        ["css=.inputText--focus .inputText__input", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='__layout']/div/div/form/label/span[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "081223334444"
+    }, {
+      "id": "5b83b00c-37b7-4bb4-a24d-e97203e18f8f",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//div[@id='__layout']/div/div/form/label[2]/span[2]/input",
+      "targets": [
+        ["css=.inputText--focus .inputText__input", "css:finder"],
+        ["xpath=(//input[@value=''])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='__layout']/div/div/form/label[2]/span[2]/input", "xpath:idRelative"],
+        ["xpath=//label[2]/span[2]/input", "xpath:position"]
+      ],
+      "value": "password"
+    }, {
+      "id": "c36f6abc-b814-4504-9079-7a9cba04976b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='__layout']/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Masuk')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "88868862-9310-4d68-8f0d-6800574cfa38",
+      "comment": "",
+      "command": "click",
+      "target": "css=.appNav__item:nth-child(5) > i > span",
+      "targets": [
+        ["css=.appNav__item:nth-child(5) > i > span", "css:finder"],
+        ["xpath=//div[@id='__layout']/div/div[17]/div/a[5]/i/span", "xpath:idRelative"],
+        ["xpath=//a[5]/i/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "408f5a26-5b0d-4435-ae9a-4485c49d545d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Keluar Aplikasi",
+      "targets": [
+        ["linkText=Keluar Aplikasi", "linkText"],
+        ["css=.menuGroup:nth-child(7) .menuGroup__item:nth-child(5)", "css:finder"],
+        ["xpath=//div[@id='__layout']/div/div[7]/div/a[5]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[3]", "xpath:href"],
+        ["xpath=//div[7]/div/a[5]", "xpath:position"],
+        ["xpath=//a[contains(.,'Keluar Aplikasi')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
   }],
   "suites": [{
     "id": "ccff4c1f-2ea5-48b5-8c62-26840669c9ef",
