@@ -193,6 +193,101 @@
       ],
       "value": ""
     }]
+  }, {
+    "id": "4ae494b7-db80-4855-a93e-0286be138e00",
+    "name": "TC_EVE_Login_W03",
+    "commands": [{
+      "id": "9b52d94d-4f4e-41c0-abf0-dda7a3b2ad4a",
+      "comment": "",
+      "command": "open",
+      "target": "/home/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "33389e51-ca96-4b9c-9b36-663245c3b8e2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "994x1050",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1a9a3153-fe69-4de1-bd1f-269c4ff13aac",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Masuk",
+      "targets": [
+        ["linkText=Masuk", "linkText"],
+        ["css=.elementor-container:nth-child(2) #menu-1-b1a0ff7 > .menu-item:nth-child(1) > .elementor-item:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Masuk')]", "xpath:link"],
+        ["xpath=//ul[@id='menu-1-b1a0ff7']/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://evermos.com/login')]", "xpath:href"],
+        ["xpath=//div[3]/div/div/div/div/nav/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Masuk')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a32149a-3218-490e-a44e-4ce4ae02aa6f",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//div[@id='__layout']/div/div/form/label/span[2]/input",
+      "targets": [
+        ["css=.inputText--focus .inputText__input", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='__layout']/div/div/form/label/span[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "+6281223334444"
+    }, {
+      "id": "4032422e-7ba6-48d7-9c43-200765749b3e",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//div[@id='__layout']/div/div/form/label[2]/span[2]/input",
+      "targets": [
+        ["css=.inputText--focus .inputText__input", "css:finder"],
+        ["xpath=(//input[@value=''])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='__layout']/div/div/form/label[2]/span[2]/input", "xpath:idRelative"],
+        ["xpath=//label[2]/span[2]/input", "xpath:position"]
+      ],
+      "value": "password"
+    }, {
+      "id": "d34cc929-24ee-4f45-b3ef-f10039f1091e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='__layout']/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Masuk')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b65aac67-0815-4c23-81c3-34cd88e20712",
+      "comment": "",
+      "command": "click",
+      "target": "css=.appNav__item:nth-child(5) > i > span",
+      "targets": [
+        ["css=.appNav__item:nth-child(5) > i > span", "css:finder"],
+        ["xpath=//div[@id='__layout']/div/div[17]/div/a[5]/i/span", "xpath:idRelative"],
+        ["xpath=//a[5]/i/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bda17de4-7ce4-44a1-b174-29fdb49a3b0b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Keluar Aplikasi",
+      "targets": [
+        ["linkText=Keluar Aplikasi", "linkText"],
+        ["css=.menuGroup:nth-child(7) .menuGroup__item:nth-child(5)", "css:finder"],
+        ["xpath=//div[@id='__layout']/div/div[7]/div/a[5]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[3]", "xpath:href"],
+        ["xpath=//div[7]/div/a[5]", "xpath:position"],
+        ["xpath=//a[contains(.,'Keluar Aplikasi')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
   }],
   "suites": [{
     "id": "ccff4c1f-2ea5-48b5-8c62-26840669c9ef",
@@ -200,7 +295,7 @@
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
-    "tests": ["485e36c5-1b52-4736-8e2c-29f7be0f7a13"]
+    "tests": ["485e36c5-1b52-4736-8e2c-29f7be0f7a13", "2522dedd-cae1-483a-a64c-f9dc27d8a627"]
   }],
   "urls": ["https://evermos.com/"],
   "plugins": []
