@@ -387,6 +387,110 @@
       ],
       "value": ""
     }]
+  }, {
+    "id": "e2961a36-fa70-4e7c-8a94-372f538b08c8",
+    "name": "TC_EVE_Login_W05",
+    "commands": [{
+      "id": "3cba6ace-ccd4-4203-9944-4fd1a51bb17d",
+      "comment": "",
+      "command": "open",
+      "target": "/home/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8cc74ba4-be3f-44b9-8901-5f00de739299",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "994x1050",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6de64c33-99ec-461f-87df-ea6476b8b117",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Masuk",
+      "targets": [
+        ["linkText=Masuk", "linkText"],
+        ["css=.elementor-container:nth-child(2) #menu-1-b1a0ff7 > .menu-item:nth-child(1) > .elementor-item:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Masuk')]", "xpath:link"],
+        ["xpath=//ul[@id='menu-1-b1a0ff7']/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://evermos.com/login')]", "xpath:href"],
+        ["xpath=//div[3]/div/div/div/div/nav/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Masuk')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "12f704e4-a49a-4ad9-b52d-cdd7ac5e965f",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//div[@id='__layout']/div/div/form/label/span[2]/input",
+      "targets": [
+        ["css=.inputText--focus .inputText__input", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='__layout']/div/div/form/label/span[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "6281223334444"
+    }, {
+      "id": "63a99cfe-1ad3-468f-b3af-f9844a3be534",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//div[@id='__layout']/div/div/form/label[2]/span[2]/input",
+      "targets": [
+        ["css=.inputText--focus .inputText__input", "css:finder"],
+        ["xpath=(//input[@value=''])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='__layout']/div/div/form/label[2]/span[2]/input", "xpath:idRelative"],
+        ["xpath=//label[2]/span[2]/input", "xpath:position"]
+      ],
+      "value": "abcd123"
+    }, {
+      "id": "8ddad3e7-d045-4688-b7f8-25dda483b0fa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='__layout']/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Masuk')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e8bc1e6-9d98-45dd-8c0b-55ab10a6bf56",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//p[contains(.,'Nomor Telepon atau Kata Sandi anda salah!')]",
+      "targets": [
+        ["css=p:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='__layout']/div/div/form/p", "xpath:idRelative"],
+        ["xpath=//form/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Nomor Telepon atau Kata Sandi anda salah!')]", "xpath:innerText"]
+      ],
+      "value": "Nomor Telepon atau Kata Sandi anda salah!"
+    }, {
+      "id": "54e6257e-4d05-4247-acf5-ccf027ae3152",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.inputText:nth-child(2) > .inputText__inner span",
+      "targets": [
+        ["css=.inputText:nth-child(2) > .inputText__inner span", "css:finder"],
+        ["xpath=//div[@id='__layout']/div/div/form/label/span[2]/i/span", "xpath:idRelative"],
+        ["xpath=//span[2]/i/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "069a2359-c0e0-46e8-a4b8-45b7e978b32c",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.inputText:nth-child(3) > .inputText__inner span",
+      "targets": [
+        ["css=.inputText:nth-child(3) > .inputText__inner span", "css:finder"],
+        ["xpath=//div[@id='__layout']/div/div/form/label[2]/span[2]/i/span", "xpath:idRelative"],
+        ["xpath=//label[2]/span[2]/i/span", "xpath:position"]
+      ],
+      "value": ""
+    }]
   }],
   "suites": [{
     "id": "ccff4c1f-2ea5-48b5-8c62-26840669c9ef",
