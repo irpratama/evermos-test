@@ -595,6 +595,98 @@
       ],
       "value": ""
     }]
+  }, {
+    "id": "24ca18c1-dacd-4e4f-aedc-1144ee286588",
+    "name": "TC_EVE_Login_W07",
+    "commands": [{
+      "id": "3a1c1505-8509-482d-84b7-285a5b7be68a",
+      "comment": "",
+      "command": "open",
+      "target": "/home/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "690f67f5-2c7e-4ba7-a7f1-e2b137fc6998",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "994x1050",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c44ed3d8-f51c-47f6-9d00-554d53342df1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Masuk",
+      "targets": [
+        ["linkText=Masuk", "linkText"],
+        ["css=.elementor-container:nth-child(2) #menu-1-b1a0ff7 > .menu-item:nth-child(1) > .elementor-item:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Masuk')]", "xpath:link"],
+        ["xpath=//ul[@id='menu-1-b1a0ff7']/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://evermos.com/login')]", "xpath:href"],
+        ["xpath=//div[3]/div/div/div/div/nav/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Masuk')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "91628887-5106-4216-9d29-b87d476a2011",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='__layout']/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Masuk')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "917de30d-cd29-4092-8401-8afad70f24fc",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//span[contains(.,'Nomor telepon harus di isi')]",
+      "targets": [
+        ["css=.inputText:nth-child(1) > .inputText__message", "css:finder"],
+        ["xpath=//div[@id='__layout']/div/div/form/label/span[3]", "xpath:idRelative"],
+        ["xpath=//span[3]", "xpath:position"],
+        ["xpath=//span[contains(.,'Nomor telepon harus di isi')]", "xpath:innerText"]
+      ],
+      "value": "Nomor telepon harus di isi"
+    }, {
+      "id": "5a624320-0310-45ba-9831-64df18f26893",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//span[contains(.,'Kata sandi harus di isi')]",
+      "targets": [
+        ["css=.inputText:nth-child(2) > .inputText__message", "css:finder"],
+        ["xpath=//div[@id='__layout']/div/div/form/label[2]/span[3]", "xpath:idRelative"],
+        ["xpath=//label[2]/span[3]", "xpath:position"],
+        ["xpath=//span[contains(.,'Kata sandi harus di isi')]", "xpath:innerText"]
+      ],
+      "value": "Kata sandi harus di isi"
+    }, {
+      "id": "bc912e83-529b-42f5-abdd-6b13ffdd61d0",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.inputText:nth-child(1) > .inputText__inner span",
+      "targets": [
+        ["css=.inputText:nth-child(1) > .inputText__inner span", "css:finder"],
+        ["xpath=//div[@id='__layout']/div/div/form/label/span[2]/i/span", "xpath:idRelative"],
+        ["xpath=//span[2]/i/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f84cef2e-186b-40ca-8a13-8f3d9b77edc3",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.inputText:nth-child(2) > .inputText__inner span",
+      "targets": [
+        ["css=.inputText:nth-child(2) > .inputText__inner span", "css:finder"],
+        ["xpath=//div[@id='__layout']/div/div/form/label[2]/span[2]/i/span", "xpath:idRelative"],
+        ["xpath=//label[2]/span[2]/i/span", "xpath:position"]
+      ],
+      "value": ""
+    }]
   }],
   "suites": [{
     "id": "ccff4c1f-2ea5-48b5-8c62-26840669c9ef",
