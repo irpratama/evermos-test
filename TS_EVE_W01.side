@@ -1,0 +1,112 @@
+{
+  "id": "54e7e09b-9243-4420-b50c-a6f02a30743e",
+  "version": "2.0",
+  "name": "TS_EVE_W01",
+  "url": "https://evermos.com",
+  "tests": [{
+    "id": "485e36c5-1b52-4736-8e2c-29f7be0f7a13",
+    "name": "TC_EVE_Login_W01",
+    "commands": [{
+      "id": "20e519da-3b34-49c5-9345-a127f8f11be8",
+      "comment": "",
+      "command": "open",
+      "target": "/home/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "900d3799-2f91-46c7-a582-919fe997ecfb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "994x1050",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "481df656-4a57-44e6-9355-5941562e189e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Masuk",
+      "targets": [
+        ["linkText=Masuk", "linkText"],
+        ["css=.elementor-container:nth-child(2) #menu-1-b1a0ff7 > .menu-item:nth-child(1) > .elementor-item:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Masuk')]", "xpath:link"],
+        ["xpath=//ul[@id='menu-1-b1a0ff7']/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://evermos.com/login')]", "xpath:href"],
+        ["xpath=//div[3]/div/div/div/div/nav/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Masuk')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0f49cdaf-c164-471e-8c93-c91ed82c51f0",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//div[@id='__layout']/div/div/form/label/span[2]/input",
+      "targets": [
+        ["css=.inputText--focus .inputText__input", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='__layout']/div/div/form/label/span[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "6281223334444"
+    }, {
+      "id": "3c69c66e-1ea4-4b27-9d4e-8f9af7416c76",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//div[@id='__layout']/div/div/form/label[2]/span[2]/input",
+      "targets": [
+        ["css=.inputText--focus .inputText__input", "css:finder"],
+        ["xpath=(//input[@value=''])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='__layout']/div/div/form/label[2]/span[2]/input", "xpath:idRelative"],
+        ["xpath=//label[2]/span[2]/input", "xpath:position"]
+      ],
+      "value": "password"
+    }, {
+      "id": "3470e138-7d37-47a3-b703-6d73fbb0de07",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='__layout']/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Masuk')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1978b878-535b-412e-b1b8-73c65ccdaca2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.appNav__item:nth-child(5) > i > span",
+      "targets": [
+        ["css=.appNav__item:nth-child(5) > i > span", "css:finder"],
+        ["xpath=//div[@id='__layout']/div/div[17]/div/a[5]/i/span", "xpath:idRelative"],
+        ["xpath=//a[5]/i/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "13258066-16a7-4894-ab97-070af485144b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Keluar Aplikasi",
+      "targets": [
+        ["linkText=Keluar Aplikasi", "linkText"],
+        ["css=.menuGroup:nth-child(7) .menuGroup__item:nth-child(5)", "css:finder"],
+        ["xpath=//div[@id='__layout']/div/div[7]/div/a[5]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[3]", "xpath:href"],
+        ["xpath=//div[7]/div/a[5]", "xpath:position"],
+        ["xpath=//a[contains(.,'Keluar Aplikasi')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "ccff4c1f-2ea5-48b5-8c62-26840669c9ef",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["485e36c5-1b52-4736-8e2c-29f7be0f7a13"]
+  }],
+  "urls": ["https://evermos.com/"],
+  "plugins": []
+}
